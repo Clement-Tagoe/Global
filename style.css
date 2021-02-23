@@ -504,6 +504,11 @@ footer img {
 
     .showcase-text h1 {
         font-size: 30px;
+        padding: 5px 0;
+    }
+
+    .showcase-text p {
+        padding-bottom: 5px;
     }
 
 
@@ -520,18 +525,18 @@ footer img {
     }
 
     .image-slider {
-        width: 450px;
+        width: 350px;
         height: 350px;
     } 
     
     
     .slide img {
-        width: 450px;
+        width: 350px;
         height: 350px;
     }
 
     .manual-navigation {
-        width: 450px;
+        width: 350px;
         margin-top: -200px;
     }
 
@@ -540,7 +545,7 @@ footer img {
     }
 
     .navigation-auto {
-        width: 450px;
+        width: 350px;
         margin-top: 300px;
     }
 
@@ -549,7 +554,7 @@ footer img {
     } 
 
     .activities .grid {
-        width: 450px;
+        width: 350px;
         margin: auto;
     }
 
