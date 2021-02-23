@@ -402,7 +402,7 @@ footer h3 {
 }
 
 footer p {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 footer img {
@@ -553,6 +553,7 @@ footer img {
         margin-right: 20px;
     } 
 
+    /* activities */
     .activities .grid {
         width: 350px;
         margin: auto;
@@ -561,6 +562,18 @@ footer img {
     .activities h1 {
         font-size: 30px;
         padding: 20px 0;
+    }
+
+    .grid-item {
+        height: 300px;
+    }
+    
+    .grid-item img {
+        height: 300px;
+    }
+
+    .grid-item.text {
+       padding: 50px; 
     }
 
     footer {
@@ -579,8 +592,16 @@ footer img {
     }
     
     footer h1 {
-        font-size: 35px;
+        font-size: 30px;
         padding-bottom: 0;
+    }
+
+    footer h3 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 16px;
     }
     
     .social {
