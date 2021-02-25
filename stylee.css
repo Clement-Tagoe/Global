@@ -274,6 +274,7 @@ img {
 
 .activities .container {
     max-width: 95%;
+    padding-bottom: 40px;
 }
 
 .activities .grid {
@@ -500,4 +501,12 @@ footer .container div h3 {
     .developer {
         padding-top: 0;
     }
+}
+
+/* Mobiles */
+
+@media(max-width: 500px) {
+    .image-slider {
+        height: 350px;
+    } 
 }
