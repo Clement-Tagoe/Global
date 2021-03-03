@@ -644,8 +644,7 @@ footer .container div h3 {
         height: 400px;
         background-color: #fff;
         z-index: 5;
-        opacity: -2;
-        transition: 0.4s;
+        transform: translateY(-200%);
     }
 
     .navbar ul {
@@ -660,10 +659,9 @@ footer .container div h3 {
     }
 
     .navbar nav.active {
-        opacity: 1;
-        animation: slideInFromTop 0.7s ease-in;
+        transform: translateY(0);
+        transition: 0.4s;
     }
-
 
 }
 
