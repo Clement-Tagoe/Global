@@ -106,8 +106,8 @@ img {
 .showcase {
     margin-top: 90px;
     height: 500px;
-    background-color: var(--primary-color);
-    color: #fff;
+    background-color: #56a3f0;
+    color: #333;
 }
 
 .showcase-container {
