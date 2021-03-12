@@ -83,7 +83,7 @@ img {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: url('menu.png');
+    background: url('images/menu.png');
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
@@ -94,7 +94,7 @@ img {
 }
 
 .toggle.active {
-    background: url('close.png');
+    background: url('images/close.png');
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center;
@@ -159,13 +159,13 @@ img {
 }
 
 .intro-text {
-    text-align: center;
-    margin: 1.5rem auto;
     max-width: 85%;
+    margin: 1.5rem auto;
 }
 
 .intro-text h1 {
     font-size: 35px;
+    text-align: center;
 }
 
 .intro-text p {
@@ -345,7 +345,7 @@ img {
 
 .about-showcase-image:before {
     content: '';
-    background: lightblue url("sewing.jpg") no-repeat fixed center/cover;
+    background: lightblue url("images/sewing.jpg") no-repeat fixed center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -368,6 +368,12 @@ img {
 
 .about-intro h1 {
     font-size: 30px;
+    line-height: 1.3;
+}
+
+.about-intro p {
+    text-align: justify;
+    font-size: 17px;
 }
 
 .proprietress-image {
@@ -377,6 +383,17 @@ img {
 
 .core-values {
     padding: 60px 0;
+}
+
+.core-values p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.core-values ul {
+    list-style-type: disc;
+    padding-left: 30px;
+    font-size: 17px;
 }
 
 .purpose,
@@ -513,26 +530,20 @@ img {
     height: 400px;
 }
 
-.academics-showcase-image {
-    background: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
 
-.academics-showcase-image:before {
+.academics-showcase-image {
     content: '';
-    background: lightblue url("cake\ exhibition.jpg") no-repeat fixed center/cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    background: lightblue url("images/gti\ graduants2.jpg") no-repeat fixed center/cover;
     width: 100%;
     height: 100%;
-    z-index: -1;
 }
 
 .academics {
-    padding: 60px 0;
+    padding-top: 60px;
+}
+
+.ac-fashion {
+    padding-bottom: 60px;
 }
 
 .academics .container {
@@ -542,11 +553,44 @@ img {
 
 .academics .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .academics .grid-item.text h2 {
     margin: 30px 0 5px;
+}
+
+.academics .catering,
+.academics .fashion {
+    margin-bottom: 20px;
+}
+
+.academics .catering h1,
+.academics .fashion h1 {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.academics p {
+    font-size: 17px;
+    text-align: justify;
+}
+
+.academics-info {
+    margin-bottom: 40px;
+}
+
+.academics-info p {
+    font-size: 17px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.academics li {
+    font-size: 17px;
 }
 
 footer {
@@ -576,6 +620,9 @@ footer .container div {
 
 footer .container div h3 {
     margin-bottom: 20px;
+}
+.footer-item1 a {
+    color: #fff;
 }
 
 .social a {
@@ -669,13 +716,10 @@ footer .container div h3 {
 /* Tables & Under */
 
 @media(max-width: 768px) {
+    
     .navbar .container {
         max-width: 100%;
         padding: 0 5px;
-    }
-
-    .logo-div {
-    
     }
     
     .navbar {
@@ -691,7 +735,8 @@ footer .container div h3 {
     .activities .grid,
     .purpose,
     .vision,
-    .academics .grid {
+    .academics .grid,
+    .grid-3 {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -710,9 +755,11 @@ footer .container div h3 {
         margin-bottom: 40px;
         text-align: center;
         order: 2;
+        max-width: 75%;
     }
 
-    .about-showcase {
+    .about-showcase,
+    .academics-showcase {
     height: 300px;
     }
 
@@ -722,8 +769,15 @@ footer .container div h3 {
         max-width: 95%;
     }
 
+    .intro .container {
+        padding: 0;
+    }
     .about-intro .container {
         padding: 20px;
+    }
+
+    .intro-text p {
+        text-align: justify;
     }
 
     .about-intro .grid {
@@ -734,9 +788,14 @@ footer .container div h3 {
         max-width: 99%;
     }
 
-    .about-intro h1 {
+    .showcase-text h1, .intro-text h1,
+    .activities h1, .about-intro h1,
+    .purpose h1, .vision h1,
+    .academics .catering h1,
+    .academics .fashion h1 {
         font-size: 25px;
         line-height: 1.2;
+        padding-bottom: 7px;
     }
 
     .core-values .container {
@@ -760,6 +819,10 @@ footer .container div h3 {
     .about-image-slider {
         width: 95%;
         height: 450px;
+    }
+
+    .grid-3 {
+        gap: 20px;
     }
 
     .academics .grid-item1 {
@@ -798,18 +861,7 @@ footer .container div h3 {
     .academics .grid-item12 {
         order: 12;
     }
-    .academics .grid-item13 {
-        order: 14;
-    }
-    .academics .grid-item14 {
-        order: 13;
-    }
-    .academics .grid-item15 {
-        order: 16;
-    }
-    .academics .grid-item16 {
-        order: 15;
-    }
+   
 
 
 
@@ -840,6 +892,19 @@ footer .container div h3 {
         width: 100%;
         height: 350px;
     } 
+
+    .showcase-text {
+        max-width: 90%;
+    }
+
+     .intro-text h1 {
+        line-height: 1.2;
+    }
+
+    .activities .container,
+    .academics .container {
+        padding: 0 15px;
+    }
 
     footer .grid {
         grid-template-columns: 1fr;
