@@ -345,13 +345,20 @@ img {
 
 .about-showcase-image:before {
     content: '';
-    background: lightblue url("images/sewing.jpg") no-repeat fixed center/cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
+    background-color: lightblue;
+    background-image: url("images/sewing.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .about-intro {
@@ -533,9 +540,16 @@ img {
 
 .academics-showcase-image {
     content: '';
-    background: lightblue url("images/gti\ graduants2.jpg") no-repeat fixed center/cover;
     width: 100%;
     height: 100%;
+    background-color: lightblue;
+    background-image: url("images/gti\ graduants2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .academics {
