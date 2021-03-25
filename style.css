@@ -343,7 +343,7 @@ img {
     position: relative;
 }
 
-.about-showcase-image:before {
+.about-showcase-image::before {
     content: '';
     position: absolute;
     top: 0;
