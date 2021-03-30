@@ -764,6 +764,11 @@ footer .container div h3 {
         max-width: 75%;
     }
 
+    .showcase-text p,
+    .btn {
+        align-self: center;
+    }
+
     .about-showcase,
     .academics-showcase {
     height: 300px;
