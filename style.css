@@ -631,6 +631,10 @@ footer .container div h3 {
     color: #fff;
 }
 
+.footer-item3 p {
+    color: #fff;
+}
+
 .social a {
     color: var(--primary-color);
 }
